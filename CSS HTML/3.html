@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    3)Напишите стили для кнопки, которая может иметь несколько состояний: active, disabled, danger. Цвета произвольные.
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            opacity: .7;
+        }
+
+        .disabled {
+            background: lightgrey;
+            cursor: not-allowed;
+        }
+
+        .active {
+            background: blue;
+        }
+
+        .danger {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <button class="btn active">Active</button>
+    <button class="btn disabled">Disabled</button>
+    <button class="btn danger">Danger</button>
+</div>
+</body>
+</html>

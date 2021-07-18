@@ -1,0 +1,10 @@
+3) Добавьте новую запись в коллекцию posts
+
+db.posts.insert({
+    title: "Title - 2",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 2" ,
+    like:  574 ,
+    dislike: 55,
+ },
+)

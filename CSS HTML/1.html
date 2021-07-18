@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+1) Опишите все известные вам способы позиционирования 5 элементов по центру, каждый из которых должен занимать 20%.
+
+
+Размеры родителя
+width: 100%;
+height: 100vh;
+
+Размеры элемента
+width: 20%;
+height: 20vh;
+
+
+1
+Нужно задать элементам свойство
+margin: auto;
+
+
+2
+Использовать flexbox
+Родителю задать свойства
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+3
+Задать родителю
+display: flex;
+flex-direction: column;
+
+Элементам
+margin-left: 40%;
+
+
+4
+Родителю
+position: relative;
+
+Элементам
+position: absolute;
+left: 40%
+
+
+5
+Grid
+display: grid;
+justify-items: center;
+</body>
+</html>

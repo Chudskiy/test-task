@@ -1,0 +1,87 @@
+db.createCollection('posts', {
+    validator: {
+        bsonType: "object",
+        $jsonSchema: {
+            properties: {
+                title: { "bsonType": "string" },
+                content: { "bsonType": "string" },
+                author: { "bsonType": "string" },
+                like: { "bsonType": "int" },
+                dislike: { "bsonType": "int" }
+            }
+        },
+    }
+})
+
+db.posts.insertMany([
+{
+    title: "Title - 1",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 1" ,
+    like: 123 ,
+    dislike:55,
+ },
+{
+    title: "Title - 2",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 2" ,
+    like:  574 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 3",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 3" ,
+    like:  77 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 4",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 2" ,
+    like:  78 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 5",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 1" ,
+    like:  974 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 6",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 2" ,
+    like:  11 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 7",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 1" ,
+    like:  453 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 8",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 3" ,
+    like:  792 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 9",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 3" ,
+    like:  235 ,
+    dislike: 55,
+ },
+{
+    title: "Title - 10",
+    content: "Lorem Ipsum is simply dummy text of the printing." ,
+    author:  "Author 4" ,
+    like:  541 ,
+    dislike: 55,
+ },
+])

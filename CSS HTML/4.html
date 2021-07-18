@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    4) Сверстайте страницу логина, которая должна содержать только форму с полями email, password.
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .form {
+            width: 300px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid grey;
+            border-radius: 7px;
+            background: #d9d9d9;
+        }
+
+        .form_title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .form_container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form_label {
+            font-size: 20px;
+        }
+
+        .form_input {
+            margin: 20px 0;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .form_button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #a6a6a6;
+        }
+
+        .form_button:hover {
+            opacity: .7;
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+<form class="form">
+    <h1 class="form_title">Login</h1>
+    <div class="form_container">
+        <label class="form_label" for="email">Email</label>
+        <input
+            class="form_input"
+            type="text"
+            placeholder="Email"
+            name="email"
+            id="email"
+        >
+        <label class="form_label" for="password">Password</label>
+        <input
+            class="form_input"
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+        >
+        <button class="form_button" type="submit">Login</button>
+    </div>
+</form>
+</body>
+</html>
